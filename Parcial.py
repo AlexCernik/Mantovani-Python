@@ -13,7 +13,8 @@ while True:
             for i in califications:
                 cant_califications += i
 
-            print(f'\n\nEl promedio es : {sum_califications/cant_califications:.2f}\n'
+            if cant_califications:
+                print(f'\n\nEl promedio es : {sum_califications/cant_califications:.2f}\n'
                       f'Aprobaron {approved} alumnos de {cant_califications} evaluados.\n\n'
                       f'El histograma es :\n ')
 
